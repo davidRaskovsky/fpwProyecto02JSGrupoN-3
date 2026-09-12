@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FPW-Proy.02-2026</title>
+   <link rel="stylesheet" href="index.css"> 
+<!-- Vincula la hoja de estilos CSS --> 
 </head>
 <body>
     <header>
     <h1>Fundamentos de Programación Web – TUDIVJ  FI - UNJU - 2026 </h1>
    </header>
-    <h2>Proyecto-02-JS-Grupo 03-Ej.03 </h2>
-    <h4><p>3.	Escribir un programa que solicite al usuario el ingreso del 
+   <main> 
+    <section>
+
+             <h2>Proyecto-02-JS-Grupo 03-Ej.03 </h2>
+             <h4><p>3.	Escribir un programa que solicite al usuario el ingreso del 
         nombre de una ciudad y el nombre de un país. El programa debe 
         concatenar ambas cadenas separándolas por una coma y un espacio
          en blanco (ej. "San Salvador de Jujuy, Argentina") y luego mostrar
           el resultado. Además, se debe realizar lo siguiente: mostrar la 
           cantidad de caracteres de ambas cadenas por separado, compararlas e
            indicar cuál de las dos es más larga (o si son iguales).
-        </p>
-    </h4>
+                </p>
+          </h4>
+    </section>
      
-      
-      <div> <p><h2> Desarrollo Ejercicio n°3 </h2></p> </div>
-      <h3> Manipulacion del DOM</h3>
-      form id="formulario" name="formulario" action=" ">
-        <label for="ciudad">Ingrese el nombre de una ciudad:</label>
-        <input type="text" id="ciudad" name="ciudad" required>
-        <br>
-        <label for="pais">Ingrese el nombre de un país:</label>
-        <input type="text" id="pais" name="pais" required>
-        <br>
-        <button type="submit">Enviar</button>
-    
-        <!-- Agregar un contenedor para mostrar los resultados -->
-         <h2>Resultados </h2>
+   <section>
+      <h3>Desarrollo Ejercicio n°3</h3>
+      <h4>Manipulacion del DOM</h4>
+      <br>
+         
+        <h2>Resultados </h2>
+        <div id="resultado"></div>
          <!-- mostrar la cadena de la ciudad ingresada y su tamaño -->
-      
+    
+         <div  la cadena mas larga es: id="resultadoLaMasLarga"></div>
         <!-- mostrar la cadena del pais ingresada y su tamaño -->
-
-        <div  id="resultado"></div>
-        <div  la cadena mas larga es id="resultadoLargaMasLarga"></div>
+    
+    </section>
    
-
+    <footer>   |
+    <P>RDA Proyecto-02-JS-Grupo 03-Ej.03 | 2026 | FI - UNJU | TUDIVJ |   </P>
+    </footer>
+<!-- Vincula el archivo JavaScript -->
+    <script type="module"  src="index.js"></script> 
 </body>
 </html>
