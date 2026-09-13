@@ -11,7 +11,7 @@ body {
 }
 /* Estilo del encabezado */
 header {
-    background: #a37a7a; /* Fondo oscuro */
+    background: #a37a7a; /* Fondo color */
     font-size: 120%; /* Tamaño de fuente */
     color: #fff; /* Texto blanco */
     width: 100%; /* Ancho completo */
@@ -20,11 +20,11 @@ header {
 }
 /* Estilo del formulario */
 form {
-    background:  #cdaeae; /* Fondo blanco */
+    background:  #cdaeae; /* Fondo color */
     size: 210%; /* Ancho completo */
     padding: 20px; /* Relleno interno */
     border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(55, 1, 1, 0.9); /* Sombra sutil */
+    box-shadow: 0 2px 5px rgba(55, 1, 1, 0.9); /* Sombra color */
     width: 450px; /* Ancho fijo */
 }
 /* Estilo de los botones */
@@ -32,8 +32,8 @@ button {
     margin-top: 10px; /* Margen superior */
     margin-left: 400px; /* Margen izquierdo */
     size: 500%; /* Tamaño de fuente */
-    background: #1c7cfa; /* Color verde */
-    color: rgb(0, 255, 102); /* Texto blanco */
+    background: #1c7cfa; /* fondo color /
+   /*  color: Texto color  */
     border: none; /* Sin borde */
     padding: 10px; /* Relleno */
     border-radius: 5px; /* Bordes redondeados */
