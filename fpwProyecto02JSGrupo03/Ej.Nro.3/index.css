@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif; /* Fuente general */
     line-height: 1.6; /* Mejora la legibilidad */
-    margin: 0; /* Elimina márgenes predeterminados */
+    margin: 100px; /* Elimina márgenes predeterminados */
     padding: 0; /* Elimina rellenos predeterminados */
     display: flex; /* Usa Flexbox para centrar el contenido */
     flex-direction: column; /* Dispone los elementos en columna */
@@ -18,3 +18,25 @@ header {
     padding: 10px 0; /* Relleno vertical */
     text-align: center; /* Centra el texto */
 }
+/* Estilo del formulario */
+form {
+    background:  #cdaeae; /* Fondo blanco */
+    size: 210%; /* Ancho completo */
+    padding: 20px; /* Relleno interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(55, 1, 1, 0.9); /* Sombra sutil */
+    width: 450px; /* Ancho fijo */
+}
+/* Estilo de los botones */
+button {
+    margin-top: 10px; /* Margen superior */
+    margin-left: 400px; /* Margen izquierdo */
+    size: 500%; /* Tamaño de fuente */
+    background: #1c7cfa; /* Color verde */
+    color: rgb(0, 255, 102); /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px; /* Relleno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+}
+/* Estilo de resultados */
