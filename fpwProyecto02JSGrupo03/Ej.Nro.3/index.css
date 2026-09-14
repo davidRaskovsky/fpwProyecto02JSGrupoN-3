@@ -40,3 +40,10 @@ button {
     cursor: pointer; /* Cambia el cursor al pasar */
 }
 /* Estilo de resultados */
+.resultados {
+    background-color: #f0f8ff; /* Color de fondo del rectángulo */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 20px; /* Espaciado superior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
