@@ -1,73 +1,23 @@
 
-import {
-  armarUbicacion,
-  compararLongitud
-} from "../services/serviciosEjercicio03.js";
+// Funcion que concatena las cadenas de ciudad y país
+export function concatenarCadenas(ciudad, pais) {
+    return `resultado cadena larga = ${ciudad}, ${pais}`;
+}
 
-const ciudad = prompt("Ingrese el nombre de una ciudad:");
-const pais = prompt("Ingrese el nombre de un pais:");
-
-const ubicacion = armarUbicacion(ciudad, pais);
-/*
-const comparacion = compararLongitud(ciudad, pais);
-*/
-alert(`Ubicacion: ${ubicacion}`);
-alert(`Comparacion: ${comparacion}`);
-
-
-
-/*------------------ */
-
-// variables const guardan los resultados
-/*
-const formulario = document.getElementById('formulario');
-const resultadoDiv = document.getElementById('resultadoLaMasLarga'); // Cambiado para que coincida con el ID correcto
-const resultado1Div = document.getElementById('resultado1'); // Para mostrar longitud de la ciudad
-const resultado2Div = document.getElementById('resultado2'); // Para mostrar longitud del país
-*/
-// Agrega un evento al formulario para manejar el envío
-/* formulario.addEventListener('submit', function(event) {
-    event.preventDefault(); // Previene el envío del formulario 
-*/
-
-    // Obtiene los valores ingresados
-  
-  /*  const ciudad = document.getElementById("ciudad").value;
-    const pais = document.getElementById("pais").value; // Agregado para obtener el país
-   */
-
-
-    // Validar que no se ingresen números
-    if (/\d/.test(ciudad) || /\d/.test(pais)) {
-        alert("No ingresar números");
-        return; // Detiene la ejecución si hay números
-    }
-
-    // Concatenar las cadenas
-    const resultado_concatenado = `${ciudad}, ${pais}`;
-
-    // Calcular longitudes
+// Funcion que determina la cadena mas larga y la mas corta
+export function compararCadenas(ciudad, pais) {
     const longitudCiudad = ciudad.length;
     const longitudPais = pais.length;
 
-    // Mostrar resultados
-    resultadoDiv.textContent = `Resultado concatenado: ${resultado_concatenado}`;
-    resultado1Div.textContent = `El nombre de la ciudad tiene (letras): ${longitudCiudad}`;
-    resultado2Div.textContent = `El nombre del país tiene (letras): ${longitudPais}`;
-    
-    // Comparar longitudes
-    const comparacion = compararLongitudes(longitudCiudad, longitudPais);
-   resultadoDiv.innerHTML += ` <br>${comparacion}`;
-    
- //   });
+    let resultadoComparacion;
 
-// Función para comparar longitudes
-function compararLongitudes(longitudCiudad, longitudPais) {
     if (longitudCiudad > longitudPais) {
-        return "La cadena 'ciudad' es más larga que la caden 'país'.";
+        resultadoComparacion = `La ciudad es más larga (${longitudCiudad} caracteres) que el país (${longitudPais} caracteres).`;
     } else if (longitudCiudad < longitudPais) {
-        return "La cadena 'país' es más larga que la cadena 'ciudad'.";
+        resultadoComparacion = `El país es más largo (${longitudPais} caracteres) que la ciudad (${longitudCiudad} caracteres).`;
     } else {
-        return "La cadenas 'ciudad' y  'país' tienen la misma longitud.";
+        resultadoComparacion = `La ciudad y el país tienen la misma longitud (${longitudCiudad} caracteres).`;
     }
+
+    return resultadoComparacion;
 }

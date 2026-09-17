@@ -1,15 +1,18 @@
-export const armarUbicacion = (ciudad, pais) => {
-  return `${ciudad} , ${pais}`;
-};
+// servicesEjercicio3.js
+import { concatenarCadenas, compararCadenas } from '../js/ejercicio03.js';
 
-export const compararLongitud = (ciudad, pais) => {
-  if (ciudad.length === pais.length) {
-    return `Misma cantidad de caracteres (${ciudad.length})`;
-  }
 
-  if (ciudad.length > pais.length) {
-    return `Ciudad ${ciudad} (${ciudad.length}) es mas larga que el pais ${pais} (${pais.length})`;
-  }
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('submitBtn').addEventListener('click', () => {
+        const ciudad = document.getElementById('ciudad').value;
+        const pais = document.getElementById('pais').value;
 
-  return `Pais ${pais} (${pais.length}) es mas largo que la ciudad ${ciudad} (${ciudad.length})`;
-};
+        const cadenaConcatenada = concatenarCadenas(ciudad, pais);
+        const resultadoComparacion = compararCadenas(ciudad, pais);
+
+        document.getElementById('resultado').innerHTML = `
+            <p>${cadenaConcatenada}</p>
+            <p>${resultadoComparacion}</p>
+        `;
+    });
+});

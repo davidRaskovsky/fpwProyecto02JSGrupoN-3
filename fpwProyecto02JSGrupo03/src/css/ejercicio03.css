@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif; /* Fuente general */
     line-height: 1.6; /* Mejora la legibilidad */
-    margin: 100px; /* Elimina márgenes predeterminados */
+    margin: 100px 0; /* Elimina márgenes predeterminados */
     padding: 0; /* Elimina rellenos predeterminados */
     display: flex; /* Usa Flexbox para centrar el contenido */
     flex-direction: column; /* Dispone los elementos en columna */
